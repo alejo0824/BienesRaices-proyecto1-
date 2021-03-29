@@ -1,0 +1,217 @@
+================================================================
+Introducción
+================================================================
+Este es el curso de HTML y CSS básico actualizdo, este es el primer proyecto. Es una sitio web
+con 7 secciones web basado en vender bienes raices. Inicia el curso desde el capítulo 4 ua que desde ahí
+se inicia el código
+
+===============================================================================
+Capítulo 4
+===============================================================================
+Clase 5 - Creando el texto html
+---------------------------
+1. Previo a empezar se copia a la carpeta del proyecto la carpeta img donde estaran ubicadas las imagenes del proyecto, Se
+crea el home del archivo que siempre será con el nombre index.html y se cambia el title del head y se agrega el h1 de la página
+
+2. Se crea la primera parte del contenido del texto de la página home del proyecto
+
+Clase 6 -Creando el texto html
+---------------------------
+1. Se finaliza el contenido de solo texto en el archivo index.html, por semántica se usa la etiqueta "lockquote" para un parrafo testimonial
+
+Clase 6
+---------------------------
+1. Se agrega todos los enlances con la etiqueta a. Adicional se crea el archivo nosotros.html
+
+===============================================================================
+Capítulo 5
+===============================================================================
+Clase 1 - Agregando el logotipo  e iconos principales
+------------------------------------------------------
+1. Se agregan las priemeras imagenes del proyecto 
+
+Clase 2 - imagenes de los anuncios
+-----------------------------------
+1. Se agragan las imagenes de los anuncios y el blog del proyecto
+
+===============================================================================
+Capítulo 6
+===============================================================================
+Clase 1 - primeros pasos estructurando el contenido
+---------------------------------------------------
+1. Estruturación del header y la primera sección 
+
+Clase 2 - Definiendo el contenido pricipal
+---------------------------
+1. Se agregan las subdivisiones del section y del main. el section se usa cuando una sección es diferente y hay
+un título, el main es la sección principal de la página y solo puede hacer, el main se difinión en la
+sección de vender casas
+
+clase 3- Creando footer y otras secciones del proyecto
+-------------------------------------------------------
+1. Se finaliza todas la Estruturación de la página principal del proyecto
+
+===============================================================================
+Capítulo 7
+===============================================================================
+Clase 1 Primeros pasos y estilos
+----------------------------------
+1. Se crea la carpeta css y dentro de ella el archivo style.css
+
+Clase 2 - Seleccionando clases etiquetas y ID's
+--------------------------------------------------
+- perdida de tiempo
+
+===============================================================================
+Capítulo 8
+===============================================================================
+Clase 1 - Definiendo el header con imagenes de fondo
+--------------------------------------------------------
+1. Se añade la clases "site-header inicio" y por medio de ccs se agrega como fondo del header en el archivo
+ style.css cuyo valores se adpten a cualquier pantalla (diseño responsivo) 
+
+Clase 2 - Creando contenido principal
+----------------------------------------
+Se crea la clase de estilo global en el archivo style.css la cual sera la caja principal para todas las 
+secciones y van a tener un diseño igual, así que se reutilizará el código, se crea la clase barra solo en el 
+archivo index html,  ambas clases se crearon dentro de un nuevo div
+
+Clase 3 - posicionamineto del menú, colores a los enlances y alineado de logotipo
+---------------------------------------------------------------------------------------
+1. Se utiliza el nuevo estandar para posicionar elementos por medio de flex box de la siguiente forma
+dentoro del selector colocamos la propiedad "display:flex" luego justify-content
+
+    display: flex; 
+    justify-content: "opciones"
+
+    Opciones: 
+        ♦ flex-end -> posiciona todo al lado derecho
+        ♦ felx-start -> default (a la izquierda)
+        ♦ flex-center -> centra el contenido 
+        ♠ space-around -> Espacio | contenido | espacio | contenido| -> distribuye el espacio
+        ♠ space-evenly -> lo mismo que space-around
+        ♠ space-between -> | contenido| espacio| contenido| -> distribuye el espacio pero empieza con el contenido
+
+2. Se usa padding para la separacion entro la parte superior de la página y la clase barra. 
+Ya que MARGIN no se puede porque si colocamos el atributo margin lo hace a partir del body, si queremos usar 
+margin debemos los atributos "position" y no podriamos usar flex-box
+
+3. se le agrega color a le letra de navegación por medio de la subclase ".navegacion a", se le quita el estilo
+que tenía por defecto y que haya una separación de cada elemneto por medio de margin-right, Adicional se le agrega 
+hover de color verde que permitira pasar de verde a blanco cuando cambia de color.
+
+4. alineado verticalmente 
+Se alinea verticalmente entre el logotipo y el nav por medio del atributo align-items: la cual su valor es:
+    ♦ flex-end -> Alinea en la parte inferior
+    ♦ flex-start ->Alinea en la parte superior
+    ♦ center -> Alinea centralmente
+
+Clase 4 - Agregando una fuente de google fonts
+-------------------------------------------------------
+1. Se busca en la página de google fonts https://fonts.google.com/ la fuente de letra lato, esto 
+generá un link que se copia en el archivo html por ahora solo en index.html y se llama en el body en el
+archivo de css
+
+clase 5 - nomalize para resetear el css por default
+-------------------------------------------------------
+1. Se copia el archivo desde el link https://necolas.github.io/normalize.css/ y se pega en un nuevo archivo
+css llamado normalize.css el cual permitira que el diseño se adapte a cualquier navegador.
+
+clase 6 - Remplazando medidas con medidas con rems
+---------------------------------------------------
+1. el número de pixeles es proporcional al tamaño de la pantalla, es decir que dependiendo el tamaño de la 
+pantalla tendrá diferente el diseño la páguna web ya que cada punto de pantalla es un pixeles
+, para ello se usan los em que son proporcianla al documento y ahoara usamos rem que son escalables para cada pantalla
+para eso se reduce el tamaño de la letra a todo el html a un 62.5%
+
+FORMULA PARA DE REM a pixeles   
+    1REMS - 62.5%Font-size = 10pz
+
+2. Se aplica la formula y se cambia los pixeles por rems
+
+clase 7 - posicionamineto del sitio web y CSS alo headings
+-----------------------------------------------------------------
+1. Se agrego otra clase como se observa en la línea 16 llamada contenido-header en index.html esta es una 
+caja que tomara el 100% de la altura de la caja padre , es decir de la clase site-header.inicio.
+
+2. En contenido-header usamos flex box y adicional cambiamos en direcionamiento, es decir que cambie
+de horizontal a vertical de la siguiente forma flex-direction: column;, adicional colocamos la porpiedad 
+justify-content: space-between para que haya enpacioo entre los 2 contenidos.
+
+3. Se cambio el tamaño de la cja para que hubieran dos lineas de texta y tambien el interlineado, adicional a
+esto, se coloco como diseño globales los atributos h1, h2 , h3 y h4, para definir un tamaño establecido 
+para todo el diseño 
+===============================================================================
+Capítulo 9
+===============================================================================
+Clase 1 - Mostrando el contenido en 3 columnas
+--------------------------------------------------------
+1.Una vex terminado el encabezado se empieza a trabajar la sección. Así que se crea una nueva clase llamada "seccion" y se recicla la clase
+contenedor, esto se hace para el posicionaiento de la caja padre
+
+2.Se crea la caja padre con nombre " y se aplica nuevamente flex-box.
+
+3 se crea la clase hijo con nombre "icono", por ahora solo se calcula el posicionamiento de la clase hijo que lo lleva en 3 elementos, formando
+así las 3 columnas de la siguiente forma. 
+
+    100%/3 = 33.33333% 
+    queremos dejar un espacio entre ellos de 10px que lo tomara la caja padre con space-between
+
+     Usamos el atributo flex-basis: calc(33.3% - 1rem);
+
+Clase 2 - Creando algunas utilidades para las secciones y textos 
+---------------------------------------------------------------------
+1. Seleccionamos una subclase de .icono la cual es h3 y convertimos todas las letras en máyusculas
+
+2.se crea las dos clases en utilidades las cuales son 
+
+    ♠ fw-300 -> Utilizar un tamaño de letra de 300
+    ♠ centrar-texto -> centrar el texto
+
+Esto se hace con el fin de reutilizar código
+
+===============================================================================
+Capítulo 10
+===============================================================================
+Clase 1 - Primeros pasos de imágenes y anuncios responsive
+--------------------------------------------------------------
+1. Desde el main se agrega la clase seccion y contenedor para ajustra el posicionamineto o las margenes
+del todo el contorno, adicional se reutiliza código CSS en h2 con la clase fw-300 para ajustar el tamaño de la 
+letra y centrar-texto 
+
+2. Se crea la clase la padre con nombre "contenedor-anuncios" y se usa flex-box con el fin de afectar a la 
+clase hijo anuncio, se hace lo mismo que en cap 9 clase 1 parte 3
+
+3. solo se crea la clase en index.html "contenido-anuncio" que solo afectará el texto 
+
+4. se crea como estilo global img con un tamaño del 100% para que se adapte a cualquier pantalla
+
+Clase 2 - Contenido de los anuncios
+--------------------------------------------------------------
+1. Aquí solo se coloca un border a las tarjetas, luego en contenido anuncio se agrega un padding de 20px
+para que que no este tan pegado y tenga una margen el texto, adicional se agrega una la subcalse p y h3 para que no este tan
+separado el texto con una margen de 0
+
+Clase 3 - Estilos a los Botones, Precios en los Anuncios 
+--------------------------------------------------------------
+1. se agrega la clase precio para cambiar el color y el tamaño de la letra, se agrega la clase boton para dar una 
+estructura general a los Botones del proyecto y se agrega la calse botan amarillo y boton verder para ultimar detalles 
+a ciertos Botones
+
+clase 4 y 5 - Botones
+-----------------------------------------------------------------
+1. Se crea Snippet para que no sume el padding en la líena 5 del archivo style.css para el tamaño del botón,
+es decir si mi tamaño es 10px no puedo colocar un tamaño de 10px ya que debo tener en cuenta el padding que es el 
+margen interno del elemento
+
+2. Como los botones estan dentro una etiqueta <a> la cual es de enlace, ya tiene restablecida el display como inline,
+es decir que no se puede aplicar un ancho, para ello se cambia el display:inline-block
+
+3. Surge un problema y es que las clases boton boton-amarillo estan al mismo nivel en el botón amarillo y si se cambia el display en uno
+altera el otro ya que CSS lee de arriba hacia abajo y si hay un valor repetido coje el último valor, para ello colocamos un !important en una nueva 
+clase llamade .d-block, con el fin  de que no cambie ese valor en específico en donde se coloque en el html
+
+4. Se crea una division para el último botón y con flex-box los alineamos a la derecha
+
+
+    
