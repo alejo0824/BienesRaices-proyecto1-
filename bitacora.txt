@@ -235,3 +235,7 @@ Clase 2 - primeros Pasos en el CSS del blog
 -----------------------------------------------------
 1. Solo para resaltar el after para agregar la línea ya que es un pseudoelemento, la cual solo describe
 diseño más no el información relevante
+
+clase 3-4 testimonial y footer
+----------------------------------------------------
+Solo se resalta el before 
