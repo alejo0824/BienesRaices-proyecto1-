@@ -86,7 +86,7 @@ dentoro del selector colocamos la propiedad "display:flex" luego justify-content
 
     Opciones: 
         ♦ flex-end -> posiciona todo al lado derecho
-        ♦ felx-start -> default (a la izquierda)
+        ♦ flex-start -> default (a la izquierda)
         ♦ flex-center -> centra el contenido 
         ♠ space-around -> Espacio | contenido | espacio | contenido| -> distribuye el espacio
         ♠ space-evenly -> lo mismo que space-around
@@ -201,7 +201,7 @@ a ciertos Botones
 clase 4 y 5 - Botones
 -----------------------------------------------------------------
 1. Se crea Snippet para que no sume el padding en la líena 5 del archivo style.css para el tamaño del botón,
-es decir si mi tamaño es 10px no puedo colocar un tamaño de 10px ya que debo tener en cuenta el padding que es el 
+es decir si mi tamaño es 10px no puedo colocar un tamaño de 10rem ya que debo tener en cuenta el padding que es el 
 margen interno del elemento
 
 2. Como los botones estan dentro una etiqueta <a> la cual es de enlace, ya tiene restablecida el display como inline,
@@ -213,5 +213,20 @@ clase llamade .d-block, con el fin  de que no cambie ese valor en específico en
 
 4. Se crea una division para el último botón y con flex-box los alineamos a la derecha
 
+===============================================================================
+Capítulo 11
+===============================================================================
+Clase 1 - priemeros Pasos en el CSS del blog
+-----------------------------------------------------
+1. Se crea una caja que contengo la seccion y el testimonial, para ello se crea un div donde se crea la clase seccion-inferior
+y se agrega la clase seccion para centrar este contenido
 
-    
+2. Aplicamos flex box en la caja grande seccion-inferior para aplicar a las clases hijos blog y testimoniales
+aplicamos flex-basis para que la clase blog ocupe el 60%  y el testimonial el 40 % - 2rem.
+
+3 Ahora la caja hijo entrada-blog será el caja padre y se aplica display box para la imagen y el texto y aplicamos
+flex basis de 60% para la clase texto y 40% - 30rem de separacion para la clase imagen.
+
+4. Adicional para cada elemento que tenga la clase entrada-blog una separación de 2rem en el bottom, excepto el
+último, para ello usamos el la clase de esta forma .entrada-blog:last-of-type y aplicamos margin:0, adicional
+el h4 aplicamos margin 0 y un entrelineado de 1.4
