@@ -230,3 +230,8 @@ flex basis de 60% para la clase texto y 40% - 30rem de separacion para la clase 
 4. Adicional para cada elemento que tenga la clase entrada-blog una separación de 2rem en el bottom, excepto el
 último, para ello usamos el la clase de esta forma .entrada-blog:last-of-type y aplicamos margin:0, adicional
 el h4 aplicamos margin 0 y un entrelineado de 1.4
+
+Clase 2 - primeros Pasos en el CSS del blog
+-----------------------------------------------------
+1. Solo para resaltar el after para agregar la línea ya que es un pseudoelemento, la cual solo describe
+diseño más no el información relevante
