@@ -216,7 +216,7 @@ clase llamade .d-block, con el fin  de que no cambie ese valor en específico en
 ===============================================================================
 Capítulo 11
 ===============================================================================
-Clase 1 - priemeros Pasos en el CSS del blog
+Clase 1 - primeros Pasos en el CSS del blog
 -----------------------------------------------------
 1. Se crea una caja que contengo la seccion y el testimonial, para ello se crea un div donde se crea la clase seccion-inferior
 y se agrega la clase seccion para centrar este contenido
