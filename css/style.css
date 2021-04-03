@@ -50,6 +50,9 @@ h4{
 .d-block{
     display: block!important; /*Se usa para que no se rescriba el display y solo se aplique en amarilla*/
 }
+.boton:hover{
+    cursor: pointer;
+}
 .boton{
     color: white;
     font-weight: 700;
@@ -60,6 +63,7 @@ h4{
     display: inline-block; /* se usa ya que los enlaces o la etiqueta <a> usa dispaly inline*/
     text-align: center;
     text-transform: uppercase;
+    border: none;
 }
 .boton-amarillo{
     background-color: #e08709;
@@ -291,6 +295,53 @@ h4{
 }
 /**Anuncios**/
 .resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**Contacto**/
+.contacto p {
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0 ;
+}
+legend{
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]),
+textarea,
+select{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+
+textarea{
+    height: 20rem;
+}
+.forma-contacto{
+    max-width: 30rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
